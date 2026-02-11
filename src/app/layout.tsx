@@ -15,25 +15,25 @@ const notoSansKr = Noto_Sans_KR({
   weight: ["400", "500", "700"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://golf-blog.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://petbusan.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "테니스 뇌피셜 | 물리원리와 인체구조로 배우는 테니스",
-    template: "%s | 테니스 뇌피셜",
+    default: "펫부산 | 반려동물 용품 리뷰와 비용 분석",
+    template: "%s | 펫부산",
   },
   description:
-    "테니스를 물리원리와 인체구조로 설명합니다. 스윙 메커니즘, 스핀의 과학, 운동역학적 분석을 통해 테니스 실력 향상에 도움을 드립니다.",
-  keywords: ["테니스", "테니스 스윙", "테니스 물리", "테니스 기술", "테니스 분석"],
-  authors: [{ name: "테니스 뇌피셜" }],
+    "반려동물 용품의 성능, TCO(총소유비용), 소모품 비용을 비교 분석합니다. 자동 화장실, 급수기, 급식기 등 반려동물 용품 리뷰와 비용 가이드.",
+  keywords: ["반려동물 용품", "펫용품 리뷰", "반려동물 용품 비교", "펫용품 비용", "반려동물 TCO"],
+  authors: [{ name: "펫부산" }],
   openGraph: {
     type: "website",
     locale: "ko_KR",
     url: siteUrl,
-    siteName: "테니스 뇌피셜",
-    title: "테니스 뇌피셜 | 물리원리와 인체구조로 배우는 테니스",
+    siteName: "펫부산",
+    title: "펫부산 | 반려동물 용품 리뷰와 비용 분석",
     description:
-      "테니스를 물리원리와 인체구조로 설명합니다.",
+      "반려동물 용품의 성능, TCO(총소유비용), 소모품 비용을 비교 분석합니다.",
   },
   robots: {
     index: true,
@@ -47,10 +47,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: GOOGLE_SITE_VERIFICATION || undefined,
-    other: {
-      "naver-site-verification": "b51349914fb24612e3a5ed8d11501df5ffc47ae3",
-    },
+    google: "LSMgI6XAKsLBkM8WlWKnKWP_z6NUMGAycz6L-xamusw",
   },
   alternates: {
     canonical: siteUrl,
@@ -68,10 +65,10 @@ export const metadata: Metadata = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "테니스 뇌피셜",
-  alternateName: "Tennis Brain Theory",
+  name: "펫부산",
+  alternateName: "PetBusan",
   url: siteUrl,
-  description: "테니스를 물리원리와 인체구조로 설명합니다.",
+  description: "반려동물 용품의 성능, TCO(총소유비용), 소모품 비용을 비교 분석합니다.",
   inLanguage: "ko-KR",
   potentialAction: {
     "@type": "SearchAction",
@@ -87,11 +84,11 @@ const websiteJsonLd = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "테니스 뇌피셜",
-  alternateName: "Tennis Brain Theory",
+  name: "펫부산",
+  alternateName: "PetBusan",
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
-  description: "테니스를 물리원리와 인체구조로 설명하는 블로그",
+  description: "반려동물 용품 리뷰와 비용 분석 블로그",
   sameAs: [],
   contactPoint: {
     "@type": "ContactPoint",
