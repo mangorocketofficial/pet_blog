@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/terms' },
   title: '이용약관 - 테니스 뇌피셜',
   description: '테니스 뇌피셜 사이트의 이용약관입니다.',
 }

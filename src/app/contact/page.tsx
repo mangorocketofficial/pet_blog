@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: '문의하기 - 테니스 뇌피셜',
   description: '테니스 뇌피셜에 문의사항이 있으시면 연락해 주세요.',
 }
